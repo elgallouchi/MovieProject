@@ -2,7 +2,6 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
 import Header from './Components/Header';
-import Navigation from './Components/Navigation';
 import Home from './Components/Home';
 import Movies from './Components/Movies';
 import Series from './Components/Series';

@@ -11,11 +11,16 @@ class Series extends React.Component {
   }
 
   componentDidMount() {
-    fetch('./datua.json')
-    .then((response) => { return response.json(); })
+    fetch('./data.json')
+    .then((response) => {
+        return response.json(); 
+      })
     .then((data) => { 
       // console.log(data.data[1].category_id); 
         this.setState({series: data.data, loading: false})
+    })
+    .catch((err) => {
+      console.log(err);
     })
 }
 
@@ -34,7 +39,7 @@ class Series extends React.Component {
             ) : ( // sinon affiche la reponse de la requette fetch
             <div className='container'>
                   { // filtrer le tableau series et recuperer que les elements avec category_id = "serie" puis map
-                    this.state.series.filter(ele => ele.category_id === "serie").map((serie, i) => {
+                    this.state.series.filter(ele => ele.category_id === "serie" && ele.releaseYear >= 2010).map((serie, i) => {
                       return (
                         <article className='series' key={i}>
                           <img src={serie.images.url} alt={serie.title} width="500" height="300" />

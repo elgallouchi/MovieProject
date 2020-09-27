@@ -32,7 +32,7 @@ class Movies extends React.Component {
 
           <div className='container'>
             {
-              this.state.films.filter(ele => ele.category_id === "movie").map((serie, i) => {
+              this.state.films.filter(ele => ele.category_id === "movie" && ele.releaseYear >= 2010).map((serie, i) => {
                 return (
                   <article className='series' key={i}>
                     <img src={serie.images.url} alt={serie.title} width="500" height="300" />
