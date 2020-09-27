@@ -3,16 +3,36 @@
   margin: 0;
   padding: 0;
 }
+body {
+  background-color: #eee;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
 /********* Header **********/
 header {
   background-color:  #f60;
   padding: 10px;
   text-align: center;
-  color:  #fff5;
+  color:  #fff;
   font-size: 18px;
   position: sticky;
   top: 0;
   z-index: 1;
+  margin-bottom: 40px;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header > .container > h1 {
+  text-transform: uppercase;
+}
+header > .container > h1 > span {
+  color: #2c2c62;
 }
 header a {
   color:  #fff;
@@ -29,13 +49,17 @@ footer {
   justify-content: space-around;
   flex-direction: column;
 }
-footer ul {
+footer .container ul {
   list-style: none;
-}
-footer > div > ul > li {
   color: #fff;
-  font-size: 18px;
-
+}
+footer > .container > div > ul > li > a{
+  color: #fff;
+  font-size: 36px;
+  cursor: pointer;
+}
+footer > .container > div > ul > li > a:hover {
+  color: #f66;
 }
 .form {
   display: flex;
@@ -87,9 +111,13 @@ footer h2 {
   border-bottom: 3px solid #fff;
   padding: 15px;
 }
+.suivez-nous {
+  font-size: 24px !important;
+}
 .social-media > ul {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .social-media > ul > li {
   padding: 10px;
@@ -101,30 +129,48 @@ footer h2 {
   text-align: center;
 }
 /************ Home ***********/
-.section-home {
+.section-home > .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.intro {
+  text-align: center;
+  background-color: #fff;
+  padding: 30px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin: 50px auto 0;
+  color: #555;
+}
+.intro > h3 {
+  font-size: 30px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+.section-home > .container > .popular-titles {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 100px;
-  height: 82vh;
+  height: 60vh;
 }
-.section-home > div {
-  width: 250px;
+.section-home > .container > .popular-titles > div {
+  width: 46%;
   border: 1px solid #ccc;
   border-radius: 3px;
-  margin: 0 3%;
+  margin: 0 2%;
 }
-.section-home > div > img {
+.section-home > .container > .popular-titles > div > img {
   width: 100%;
-  height: 200px;
+  height: 35vh;
   border-radius: 3px 3px 0px 0;
 }
-.section-home > div > h3 {
+.section-home > .container > .popular-titles> div > h3 {
   padding: 10px;
   color: #333;
   text-align: center;
 }
-.section-home > div > h3 > a {
+.section-home > .container > .popular-titles> div > h3 > a {
     color: #f66;
     text-decoration: navajowhite;
     font-size: 22px;
@@ -132,17 +178,16 @@ footer h2 {
 
 /*********** Series ***********/
 .section-series {
+  /* margin-top: 40px; */
+}
+.section-series .container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  width: 80%;
   margin: 0 auto;
 }
-body {
-  background-color: #eee;
-}
 .section-series .series {
-  width: 25%;
+  width: 40%;
   margin: 20px 2%;
   background: #fff;
   border: 1px solid #ccc;
@@ -154,21 +199,83 @@ body {
 }
 .section-series .series > img {
   width: 100%;
-  height: 40vh;
+  height: 50vh;
   border-radius: 3px 3px 0 0;
 }
 .section-series .series > h3 {
-  color: #f60;
+  color: #f66;
   text-align: center;
-  font-size: 18px;
-  padding: 10px;
+  font-size: 24px;
+  padding: 30px 10px;
 }
 .section-series .series:nth-of-type(5) {
-  width: 47%;
+  /* width: 47%; */
 }
 .section-series .series:nth-of-type(4) {
-  width: 32%;
+  /* width: 32%; */
 }
 .section-series .series:last-child {
-  width: 54%;
+  /* width: 54%; */
+}
+
+/************* Loader ************/
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: calc(70vh - 40px);
+}
+.lds-facebook {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-facebook div {
+  display: inline-block;
+  position: absolute;
+  left: 8px;
+  width: 16px;
+  background: #f60c;
+  animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+}
+.lds-facebook div:nth-child(1) {
+  left: 8px;
+  animation-delay: -0.24s;
+}
+.lds-facebook div:nth-child(2) {
+  left: 32px;
+  animation-delay: -0.12s;
+}
+.lds-facebook div:nth-child(3) {
+  left: 56px;
+  animation-delay: 0;
+}
+@keyframes lds-facebook {
+  0% {
+    top: 8px;
+    height: 64px;
+  }
+  50%, 100% {
+    top: 24px;
+    height: 32px;
+  }
+}
+
+/************* Erreur 404 ************/
+.erreur404 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+}
+.erreur404 > h2 {
+  font-size: 5em;
+  color: #ee1155;
+}
+.erreur404 > p {
+  font-size: 18px;
+  color: #444;
 }

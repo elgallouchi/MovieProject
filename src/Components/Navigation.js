@@ -5,11 +5,11 @@ class Navigation extends React.Component {
 
   render () {
     return (
-      <header>
-          <Link to='/'>Home</Link> |
-          <Link to='/movies'>Movies</Link> |
-          <Link to='/series'>Series</Link>
-        </header>
+      <nav>
+          <Link to='/'>Accueil</Link> |
+          <Link to='/movies'>Films</Link> |
+          <Link to='/series'>Séries</Link>
+        </nav>
     );
   }
 }

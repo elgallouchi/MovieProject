@@ -16,17 +16,28 @@ class Home extends React.Component {
   render() {
     return(
         <section className='section-home'>
+          <div className='container'>
 
-          <div className='movies'>
-                <img src='../img/movie.jpg' alt='' />
-                <h3><Link to='/movies'>Popular Movies</Link></h3>
+          <div className='intro'>
+            <h3>Tous les films</h3>
+            <p>
+              Retrouvez les films recensés sur ce site, à voir ou au revoir, seul, en famille ou entre amis. 
+            </p>
           </div>
 
-          <div className='series'>
-                <img src='../img/serie.jpg' alt='' />
-                <h3><Link to='/series'>Popular Series</Link></h3>
+          <div className='popular-titles'>
+            <div className='movies'>
+                  <img src='../img/movie.jpg' alt='' />
+                  <h3><Link to='/movies'>Popular Movies</Link></h3>
+            </div>
+
+            <div className='series'>
+                  <img src='../img/serie.jpg' alt='' />
+                  <h3><Link to='/series'>Popular Series</Link></h3>
+            </div>
           </div>
 
+          </div>
         </section>
     );
   }
