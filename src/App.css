@@ -1,38 +1,174 @@
-.App {
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/********* Header **********/
+header {
+  background-color:  #f60;
+  padding: 10px;
   text-align: center;
+  color:  #fff5;
+  font-size: 18px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+header a {
+  color:  #fff;
+  text-decoration: none;
+  padding: 0 10px;
+  font-size: 18px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/********* Footer **********/
+footer {
+  background-color: #2c2c62;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+footer ul {
+  list-style: none;
 }
+footer > div > ul > li {
+  color: #fff;
+  font-size: 18px;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+}
+.form {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+}
+.form > input, .form > textarea {
+  padding: 8px;
+  border: none;
+  border-radius: 3px;
+  width: 75%;
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #444;
+}
+.form textarea {
+  height: 150px;
+}
+.form > button {
+  background-color: #f60;
+  border: 0;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 18px;
+  color: #fff;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+.social-media {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+footer h2 {
+  text-align: center;
+  color: #fff;
+  border-bottom: 3px solid #fff;
+  padding: 15px;
+}
+.social-media > ul {
+  display: flex;
+  justify-content: center;
+}
+.social-media > ul > li {
+  padding: 10px;
+  font-size: 24px;
+}
+.copyright > p {
+  font-size: 14px;
+  color: #fff9;
+  text-align: center;
+}
+/************ Home ***********/
+.section-home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+  height: 82vh;
+}
+.section-home > div {
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin: 0 3%;
+}
+.section-home > div > img {
+  width: 100%;
+  height: 200px;
+  border-radius: 3px 3px 0px 0;
+}
+.section-home > div > h3 {
+  padding: 10px;
+  color: #333;
+  text-align: center;
+}
+.section-home > div > h3 > a {
+    color: #f66;
+    text-decoration: navajowhite;
+    font-size: 22px;
 }
 
-.App-link {
-  color: #61dafb;
+/*********** Series ***********/
+.section-series {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 0 auto;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+body {
+  background-color: #eee;
+}
+.section-series .series {
+  width: 25%;
+  margin: 20px 2%;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+.section-series .series > img {
+  width: 100%;
+  height: 40vh;
+  border-radius: 3px 3px 0 0;
+}
+.section-series .series > h3 {
+  color: #f60;
+  text-align: center;
+  font-size: 18px;
+  padding: 10px;
+}
+.section-series .series:nth-of-type(5) {
+  width: 47%;
+}
+.section-series .series:nth-of-type(4) {
+  width: 32%;
+}
+.section-series .series:last-child {
+  width: 54%;
 }
