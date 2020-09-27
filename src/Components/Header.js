@@ -1,5 +1,6 @@
 import React from 'react';
 import Navigation from './Navigation';
+import { Link } from 'react-router-dom';
 
 class Header extends React.Component {
 
@@ -7,7 +8,7 @@ class Header extends React.Component {
     return(
       <header>
         <div className='container'>
-          <h1><i class="fas fa-film"></i> ciné<span></span></h1>
+        <Link to='/'> <h1><i class="fas fa-film"></i> ciné<span></span></h1></Link>
           {/* <h1></h1> */}
           <Navigation />
         </div>

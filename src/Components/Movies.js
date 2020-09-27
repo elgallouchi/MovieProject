@@ -12,7 +12,7 @@ class Movies extends React.Component {
   }
 
   componentDidMount() {
-    fetch('./datra.json')
+    fetch('./data.json')
     .then((response) => { return response.json(); })
     .then((data) => { 
 
@@ -24,6 +24,8 @@ class Movies extends React.Component {
   render() {
     return (
       <section className='section-series'>
+        <h2>FILMS</h2>
+
         {this.state.loading || !this.state.films ? (
           <Loading />
         ) : (

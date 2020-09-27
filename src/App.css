@@ -1,3 +1,6 @@
+/************ Import Font ************/
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600&display=swap');
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -5,7 +8,7 @@
 }
 body {
   background-color: #eee;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Cairo', Verdana, Geneva, Tahoma, sans-serif;
 }
 .container {
   width: 80%;
@@ -82,6 +85,7 @@ footer > .container > div > ul > li > a:hover {
   margin-bottom: 15px;
   font-size: 18px;
   color: #444;
+  font-family: 'Cairo', Verdana, Geneva, Tahoma, sans-serif;
 }
 .form textarea {
   height: 150px;
@@ -98,6 +102,7 @@ footer > .container > div > ul > li > a:hover {
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
   -o-border-radius: 3px;
+  font-family: 'Cairo', Verdana, Geneva, Tahoma, sans-serif;
 }
 .social-media {
   display: flex;
@@ -148,6 +153,9 @@ footer h2 {
   margin-bottom: 30px;
   text-transform: uppercase;
 }
+.intro > p {
+  font-size: 1.3em;
+}
 .section-home > .container > .popular-titles {
   display: flex;
   justify-content: center;
@@ -179,6 +187,18 @@ footer h2 {
 /*********** Series ***********/
 .section-series {
   /* margin-top: 40px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section-series > h2 {
+  text-align: center;
+  font-size: 2.5em;
+  font-weight: ;
+  color: #333;
+  margin: 25px 0;
+  border-bottom: 3px solid #f606;
+  padding: 25px;
 }
 .section-series .container {
   display: flex;
@@ -187,7 +207,7 @@ footer h2 {
   margin: 0 auto;
 }
 .section-series .series {
-  width: 40%;
+  width: 25%;
   margin: 20px 2%;
   background: #fff;
   border: 1px solid #ccc;
@@ -199,7 +219,7 @@ footer h2 {
 }
 .section-series .series > img {
   width: 100%;
-  height: 50vh;
+  height: 35vh;
   border-radius: 3px 3px 0 0;
 }
 .section-series .series > h3 {
@@ -225,6 +245,7 @@ footer h2 {
   align-items: center;
   flex-direction: column;
   height: calc(70vh - 40px);
+  margin-top: -100px;
 }
 .lds-facebook {
   display: inline-block;
@@ -270,6 +291,7 @@ footer h2 {
   align-items: center;
   justify-content: center;
   height: 70vh;
+  margin-top: -100px;
 }
 .erreur404 > h2 {
   font-size: 5em;
