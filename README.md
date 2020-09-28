@@ -1,5 +1,5 @@
 # Movie Project
- Creation de projet React avec une JSON 
+ Creation de projet React avec JSON 
 
 
 ### Accueil
