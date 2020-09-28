@@ -11,7 +11,7 @@ class Series extends React.Component {
   }
 
   componentDidMount() {
-    fetch('./daeta.json')
+    fetch('./data.json')
     .then((response) => {
         return response.json(); 
       })

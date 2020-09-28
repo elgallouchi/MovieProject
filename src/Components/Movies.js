@@ -12,7 +12,7 @@ class Movies extends React.Component {
   }
 
   componentDidMount() {
-    fetch('./da7ta.json')
+    fetch('./data.json')
     .then((response) => { return response.json(); })
     .then((data) => { 
 

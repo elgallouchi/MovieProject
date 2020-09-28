@@ -8,6 +8,9 @@
 ### Films
 ![!](./assets/films.png)
 
+### Series
+![!](./assets/series.png)
+
 ### Erreur 404
 ![!](./assets/error404.png)
 
