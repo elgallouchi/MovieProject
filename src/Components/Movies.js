@@ -12,23 +12,30 @@ class Movies extends React.Component {
   }
 
   componentDidMount() {
-    fetch('./data.json')
+    fetch('./da7ta.json')
     .then((response) => { return response.json(); })
     .then((data) => { 
 
       console.log(data.data[1].category_id); 
         this.setState({films: data.data, loading: false})
     })
+    .catch((err) => {
+      console.log('err');
+      console.log(err);
+      document.getElementById('err').innerHTML = `<h3 class='erreur'>Oops, enfin une erreur qui fonctionne ✌️ </h3>`;
+      this.setState({loading: false})
+    })
 }
 
   render() {
     return (
+
       <section className='section-series'>
         <h2>FILMS</h2>
+        <div id='err'></div>
 
-        {this.state.loading || !this.state.films ? (
-          <Loading />
-        ) : (
+
+        {this.state.loading || !this.state.films ? <Loading /> : (
 
           <div className='container'>
             {
@@ -42,6 +49,8 @@ class Movies extends React.Component {
               )})
             }
           </div>
+
+
         )}
       </section>
     );

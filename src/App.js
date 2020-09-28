@@ -15,7 +15,7 @@ function App() {
       <Header />
       <Switch>
         <Route exact path='/' component={Home} />
-        <Route exact path='/movies' component={Movies} />
+        <Route exact path='/films' component={Movies} />
         <Route exact path='/series' component={Series} />
         <Route component={NotFound} />
       </Switch>

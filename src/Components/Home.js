@@ -26,12 +26,12 @@ class Home extends React.Component {
 
           <div className='popular-titles'>
             <div className='movies'>
-                  <img src='../img/movie.jpg' alt='' />
-                  <h3><Link to='/movies'>Popular Movies</Link></h3>
+                  <img src='../img/film.png' alt='' />
+                  <h3><Link to='/films'>Popular Movies</Link></h3>
             </div>
 
             <div className='series'>
-                  <img src='../img/serie.jpg' alt='' />
+                  <img src='../img/movie.jpg' alt='' />
                   <h3><Link to='/series'>Popular Series</Link></h3>
             </div>
           </div>
