@@ -35,7 +35,7 @@ class Movies extends React.Component {
               this.state.films.filter(ele => ele.category_id === "movie" && ele.releaseYear >= 2010).map((serie, i) => {
                 return (
                   <article className='series' key={i}>
-                    <img src={serie.images.url} alt={serie.title} width="500" height="300" />
+                    <img src={Object.keys(serie.images.url).length !== 0 ? serie.images.url : '../img/image-non-trouve.jpg'} alt={serie.title} width="500" height="300" />
                     <h3>{serie.title}</h3>
                     {/* <p>{serie.description}</p> */}
                   </article>

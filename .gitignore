@@ -5,7 +5,7 @@
 /.pnp
 .pnp.js
 steps.txt
-
+/src/data.json
 # testing
 /coverage
 
