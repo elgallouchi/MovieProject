@@ -1,8 +1,7 @@
 # Movie Project
  Creation de projet React avec JSON 
 
-Clique ici pour visiter la demo 
- [[Click Here]](https://moviejson.netlify.app)
+### Clique ici pour visiter la demo => [[Click Here]](https://moviejson.netlify.app)
 
 ### Accueil
 ![!](./assets/home.png)
