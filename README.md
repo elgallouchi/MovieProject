@@ -21,5 +21,4 @@
 ### Loading
 ![!](./assets/loading.png)
 
-### MCD
-![!](./assets/mcd-json.png)
+
