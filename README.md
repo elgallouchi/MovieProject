@@ -4,7 +4,7 @@ Projet intitulé CinéMovie a pour objectif d'afficher les données stocké dans
 pour faire participer l'utilisateur a comprendre ce qui se passe, j'ai mit un loader en true qui devient false une fois la requette est chargé.  
 le responsive design en CSS3 avec Flexbox
 
-ce projet vient dans l'idée de mettre en pratique les competences ReactJs, HTML5, CSS3, JavaScript, Flexbox, Git, 
+ce projet vient dans l'idée de mettre en pratique les competences ReactJs, HTML5, CSS3, JavaScript, Flexbox, Git, API, AJAX 
 
 ### Clique ici pour visiter la demo => [[Click Here]](https://moviejson.netlify.app)
 
