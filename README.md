@@ -1,12 +1,9 @@
 # Movie Project
-Projet intitulé CinéMovie a pour objectif d'afficher les données stocké dans un fichier JSON comme base de donnée, avec une requette AJAXje recupére et filtrer les données selon la catégorie films ou series, j'ai aussi mit en place la gestione d'erreur en cas de non recupération des données. 
+Le projet intitulé CinéMovie a pour objectif d'afficher les données stockées dans un fichier JSON comme base de données, avec une requête AJAX. Je les ai ensuite récupéré et filtré selon leurs catégories films ou séries, puis par la suite j'ai mis en place la gestion d'erreur en cas de non-récupération des données et pour faire participer l'utilisateur à comprendre ce qui se passe, j'ai mis un loader en true qui devient false une fois que la requête c'est chargé. Le rendu doit être responsif design en CSS3 avec Flexbox.
 
-pour faire participer l'utilisateur a comprendre ce qui se passe, j'ai mit un loader en true qui devient false une fois la requette est chargé.  
-le responsive design en CSS3 avec Flexbox
+Ce projet vient de l'idée de mettre en pratique les competences ReactJs, HTML5, CSS3, JavaScript, Flexbox, Git, API, AJAX 
 
-ce projet vient dans l'idée de mettre en pratique les competences ReactJs, HTML5, CSS3, JavaScript, Flexbox, Git, API, AJAX 
-
-### Clique ici pour visiter la demo => [[Click Here]](https://moviejson.netlify.app)
+### Voir la démo => [[Click Here]](https://moviejson.netlify.app)
 
 ### Accueil
 ![!](./assets/home.png)
@@ -25,5 +22,3 @@ ce projet vient dans l'idée de mettre en pratique les competences ReactJs, HTML
 
 ### Loading
 ![!](./assets/loading.png)
-
-
